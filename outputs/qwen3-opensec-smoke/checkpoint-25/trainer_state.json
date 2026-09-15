@@ -1,0 +1,65 @@
+{
+  "best_global_step": 25,
+  "best_metric": 2.2810325622558594,
+  "best_model_checkpoint": "outputs\\qwen3-opensec-smoke\\checkpoint-25",
+  "epoch": 0.5714285714285714,
+  "eval_steps": 25,
+  "global_step": 25,
+  "is_hyper_param_search": false,
+  "is_local_process_zero": true,
+  "is_world_process_zero": true,
+  "log_history": [
+    {
+      "entropy": 3.400556418299675,
+      "epoch": 0.22857142857142856,
+      "grad_norm": 2.186239719390869,
+      "learning_rate": 0.0001590909090909091,
+      "loss": 4.577473831176758,
+      "mean_token_accuracy": 0.3399825282394886,
+      "num_tokens": 10382.0,
+      "step": 10
+    },
+    {
+      "entropy": 3.3167864829301834,
+      "epoch": 0.45714285714285713,
+      "grad_norm": 2.8874013423919678,
+      "learning_rate": 0.00011363636363636365,
+      "loss": 3.0007495880126953,
+      "mean_token_accuracy": 0.4875957429409027,
+      "num_tokens": 20742.0,
+      "step": 20
+    },
+    {
+      "epoch": 0.5714285714285714,
+      "eval_entropy": 2.254881725992475,
+      "eval_loss": 2.2810325622558594,
+      "eval_mean_token_accuracy": 0.5903161074434008,
+      "eval_num_tokens": 25881.0,
+      "eval_runtime": 6.7742,
+      "eval_samples_per_second": 10.333,
+      "eval_steps_per_second": 10.333,
+      "step": 25
+    }
+  ],
+  "logging_steps": 10,
+  "max_steps": 44,
+  "num_input_tokens_seen": 0,
+  "num_train_epochs": 1,
+  "save_steps": 25,
+  "stateful_callbacks": {
+    "TrainerControl": {
+      "args": {
+        "should_epoch_stop": false,
+        "should_evaluate": false,
+        "should_log": false,
+        "should_save": true,
+        "should_training_stop": false
+      },
+      "attributes": {}
+    }
+  },
+  "total_flos": 68754618187776.0,
+  "train_batch_size": 1,
+  "trial_name": null,
+  "trial_params": null
+}

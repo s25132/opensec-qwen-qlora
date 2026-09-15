@@ -1,0 +1,13 @@
+                    precision    recall  f1-score   support
+
+         malicious       0.28      0.55      0.37       120
+        suspicious       0.05      0.04      0.04       120
+            benign       0.26      0.11      0.15       120
+    expected_admin       0.23      0.74      0.35       120
+authorised_testing       0.78      0.06      0.11       120
+  misconfiguration       0.00      0.00      0.00       120
+           unknown       0.78      0.32      0.45       120
+
+          accuracy                           0.26       840
+         macro avg       0.34      0.26      0.21       840
+      weighted avg       0.34      0.26      0.21       840

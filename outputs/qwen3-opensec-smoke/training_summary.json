@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "smoke_test": true,
+  "train_examples": 350,
+  "validation_examples": 70,
+  "epochs": 1.0,
+  "max_length": 256,
+  "lora_r": 8,
+  "train_loss": 2.8319429917769,
+  "adapter_path": "outputs\\qwen3-opensec-smoke\\final_adapter"
+}

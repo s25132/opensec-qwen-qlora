@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "adapter": "outputs/qwen3-opensec-smoke/final_adapter",
+  "examples": 840,
+  "accuracy": 0.25952380952380955,
+  "macro_f1": 0.21108092995338582,
+  "invalid_outputs": 0,
+  "invalid_rate": 0.0
+}

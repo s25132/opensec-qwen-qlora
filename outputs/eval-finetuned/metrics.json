@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "adapter": "outputs/qwen3-opensec/final_adapter",
+  "examples": 840,
+  "accuracy": 0.669047619047619,
+  "macro_f1": 0.6149899186268536,
+  "invalid_outputs": 0,
+  "invalid_rate": 0.0
+}

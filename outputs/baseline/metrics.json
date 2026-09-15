@@ -1,0 +1,6 @@
+{
+  "model": "TF-IDF + LogisticRegression",
+  "examples": 840,
+  "accuracy": 1.0,
+  "macro_f1": 1.0
+}

@@ -1,0 +1,13 @@
+torch @ https://download.pytorch.org/whl/cu126/torch-2.14.0%2Bcu126-cp312-cp312-win_amd64.whl # PyTorch with CUDA 12.6 support with Windows and Python 3.12
+transformers>=4.51.0
+datasets>=3.5.0
+accelerate>=1.6.0
+peft>=0.15.0
+trl>=0.17.0
+bitsandbytes>=0.45.0
+safetensors>=0.5.0
+scikit-learn>=1.5.0
+pandas>=2.2.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+pytest>=8.0.0
