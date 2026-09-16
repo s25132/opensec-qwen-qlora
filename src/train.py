@@ -61,8 +61,8 @@ def main() -> None:
         gradient_accumulation_steps=args.gradient_accumulation,
         max_length=args.max_length,
         packing=False,
-        fp16=True,
-        bf16=False,
+        fp16=True, # zużywa mniej pamięci VRAM — liczba FP16 zajmuje 2 bajty, FP32 zajmuje 4 bajty
+        bf16=False, 
         gradient_checkpointing=True,
         optim="paged_adamw_8bit",
         logging_steps=10,
@@ -87,10 +87,8 @@ def main() -> None:
         peft_config=lora_config,
     )
 
-    # Na niektórych konfiguracjach Windows + CUDA adaptery LoRA
-    # powstają jako BF16. GradScaler FP16 nie potrafi wtedy
-    # przeskalować ich gradientów, dlatego wymuszamy FP32
-    # tylko dla niewielkich, trenowanych parametrów LoRA.
+    # Przekonwertuj parametry modelu na float32 przed treningiem, aby uniknąć problemów z mieszanymi precyzjami
+    # W przeciwnym razie mogą wystąpić problemy z mieszanymi precyzjami podczas treningu, zwłaszcza przy użyciu adapterów LoRA.
     for parameter in trainer.model.parameters():
         if parameter.requires_grad:
             parameter.data = parameter.data.to(torch.float32)
